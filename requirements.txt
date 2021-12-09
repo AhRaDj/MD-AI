@@ -3,3 +3,5 @@ tensorflow-cpu
 gunicorn
 pillow
 numpy
+opencv-python
+opencv-contrib-python
