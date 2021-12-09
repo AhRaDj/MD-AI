@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = './static/uploads/'
 model = load_model('belimbing-wuluh_jambu-biji_class_model.h5')
 
-class_dict = {0: 'Belimbing Wuluh', 1: 'Jambu Biji'}
+class_dict = {0: 'Daun Belimbing Wuluh', 1: 'Daun Jambu Biji'}
 
 def predict_label(img_path):
     query = cv2.imread(img_path)
@@ -37,5 +37,5 @@ def index():
 def send_uploaded_image(filename=''):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
-if __name__ == '__main__':
+if _name_ == '_main_':
     app.run(debug=True)
