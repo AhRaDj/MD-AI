@@ -3,6 +3,6 @@ tensorflow-cpu
 gunicorn
 pillow
 numpy
+opencv-python
 opencv-python-headless
 opencv-contrib-python
-libgl1-mesa-glx
