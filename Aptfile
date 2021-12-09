@@ -5,3 +5,4 @@ libice6
 python-opencv
 opencv-python-headless
 opencv-contrib-python
+libgl1
